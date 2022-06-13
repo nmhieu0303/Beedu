@@ -1,0 +1,24 @@
+{
+  "name": "beedu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --no-source-map sass/index.scss:styles/styles.css&&start index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmhieu0303/Beedu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmhieu0303/Beedu/issues"
+  },
+  "homepage": "https://github.com/nmhieu0303/Beedu#readme",
+  "dependencies": {
+    "sass": "^1.52.3"
+  }
+}
