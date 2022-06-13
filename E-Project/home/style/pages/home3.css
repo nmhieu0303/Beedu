@@ -1,0 +1,30 @@
+.home-page3 {
+    height: 446px;
+    background-image: url(../../asset/imgs/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.home-page3_text {
+    width: 40%;
+    text-align: left;
+    margin: 135px;
+    margin-right: 200px;
+
+}
+
+.home-page3_text p:first-child {
+    margin-bottom: 80px;
+}
+
+.under-text {
+    text-align: right;
+    margin: 0;
+}
+
+
+.home-page3_img {
+    margin: 75px;
+
+}

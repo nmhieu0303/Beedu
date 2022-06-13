@@ -1,0 +1,45 @@
+body{
+    background-image: url(../../../home/asset/imgs/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px;
+   
+}
+.finish {
+    background-color: white;
+
+    border: 1px solid transparent;
+    border-radius: 7px;
+    box-shadow: 0 1px 3px 1px rgb(60 64 67 / 15%);
+    
+    width: 40%;
+    height: calc(100% + 137px + 137px); 
+    margin: 0px auto;
+    padding: 15px;
+   
+    
+}
+.finish > p {
+    text-align: center;
+    font-weight: bold;
+
+}
+.finish > img {
+     width: 50%;
+     height: 50%;
+     display: block;
+      margin-left: auto;
+       margin-right: auto;
+}
+.finish > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background-color: #3C74B3;
+    color: white;
+   padding: 10px;
+    
+
+}
