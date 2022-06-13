@@ -14,7 +14,6 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   </head>
   <body>
     <!-- 
@@ -39,6 +38,4 @@
 </html>
 ```
 
-# Link Iconscout
 
-https://iconscout.com/unicons/explore/line
