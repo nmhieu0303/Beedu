@@ -15,6 +15,7 @@ a.back__btn {
     top: 0;
     left: 0;
     transform: translate(100%, 100%);
+    cursor: pointer;
 }
 
 .back__btn img {

@@ -15,6 +15,7 @@ a.back__btn {
     top: 0;
     left: 0;
     transform: translate(100%, 100%);
+    cursor: pointer;
 }
 
 .back__btn img {
@@ -82,10 +83,11 @@ a.back__btn {
     max-height: 200px;
 }
 
-.login>div:first-child>div>button {
+.login>div:first-child>div>a {
     width: 48%;
     padding: 2px;
     background-color: #3C74B3;
+    text-decoration:none;
 
     display: flex;
     justify-content: space-between;
@@ -94,8 +96,11 @@ a.back__btn {
     border-radius: 7px;
     cursor: pointer;
 }
+.login>div:first-child>div>a:hover{
+    background-color: #568fd1;
+}
 
-.login>div:first-child>div>button>div {
+.login>div:first-child>div>a>div {
     height: 35px;
     aspect-ratio: 1/1;
     background-color: white;
@@ -107,12 +112,12 @@ a.back__btn {
 
 }
 
-.login>div:first-child>div>button>div>img {
+.login>div:first-child>div>a>div>img {
     width: 20px;
     height: 20px;
 }
 
-.login>div:first-child>div>button>span {
+.login>div:first-child>div>a>span {
     font-size: 11px;
     color: white;
     margin-right: 8px;
