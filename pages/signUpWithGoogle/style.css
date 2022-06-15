@@ -1,0 +1,43 @@
+body {
+    padding: 50px;
+    padding-top: 5%;
+    background-image: url(../../assets/images/background/bg2.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.back__btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100%, 100%);
+}
+
+.back__btn img {
+    width: 40px;
+}
+
+
+.btn {
+    display: block;
+    padding: 15px 20px;
+    background-color: white;
+}
+.content__account_list>li{
+    padding: 0;
+}
+.content__account_list>li>a{
+    padding: 0.75rem 1.25rem;
+}
+
+
+
+.acount_item {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
