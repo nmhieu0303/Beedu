@@ -70,6 +70,7 @@ body {
 .nav-item:last-child {
   display: flex;
   align-items: center;
+  border-bottom: 2px solid #fbad18;
 }
 
 .nav-item:last-child * {
