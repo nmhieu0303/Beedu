@@ -15,6 +15,7 @@ a.back__btn {
     top: 0;
     left: 0;
     transform: translate(100%, 100%);
+    cursor: pointer;
 }
 
 .back__btn img {
@@ -97,7 +98,8 @@ a.back__btn {
     cursor: pointer;
     transition: 0.25s all ease-in-out;
 }
-.signup .signup_right>div>a:hover{
+
+.signup .signup_right>div>a:hover {
     background-color: #568fd1;
 }
 
