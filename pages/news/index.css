@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+}
+
+.header {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+
+.nav-link--custom {
+  color: #000;
+  font-size: 24px;
+}
+
+.action__icon {
+  font-size: 24px;
+  padding: 0 8px;
+}
+
+.nav-item:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:nth-child(2) {
+  border-bottom: 2px solid #fbad18;
+}
+
+.nav-item:nth-child(2) * {
+  color: #fbad18;
+}
+
+.carousel {
+  background: url('./assets/detailed-back-s.png');
+  height: 780px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.news {
+  padding: 100px 140px 60px 140px;
+}
+
+.news-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news h3 {
+  font-size: 48px;
+  margin-bottom: 35px;
+}
+
+.news-left {
+  max-width: 909px;
+}
+
+.news-left img {
+  width: 100%;
+  height: 563px;
+}
+
+.news-left h6 {
+  margin-top: 23px;
+  font-size: 25px;
+  margin-bottom: 26px;
+  font-weight: 400;
+  color: #a3a3a3;
+}
+
+.news-left h4 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.news-left p {
+  font-size: 20px;
+  color: #a3a3a3;
+}
+
+.news-right {
+  max-width: 689px;
+}
+
+.news-right img {
+  width: 100%;
+  height: 319px;
+}
+
+.news-right h6 {
+  margin-top: 18px;
+  font-size: 25px;
+  margin-bottom: 22px;
+  font-weight: 400;
+  color: #a3a3a3;
+}
+
+.news-right h4 {
+  font-size: 35px;
+  margin-bottom: 23px;
+  font-weight: 600;
+}
+
+.news p {
+  font-size: 20px;
+  color: #a3a3a3;
+}
+
+.news-right img:nth-child(5) {
+  margin-top: 56px;
+}
+
+.video {
+  padding-left: 140px;
+  margin-bottom: 228px;
+}
+
+.video h3 {
+  font-size: 48px;
+  margin-bottom: 35px;
+}
+
+.video img {
+  height: 450px;
+  width: 100%;
+}
+
+.video-item {
+  width: 774px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 69px;
+}
+
+.video-item .icon {
+  position: absolute;
+  top: 160px;
+  left: 323px;
+  cursor: pointer;
+}
+
+.video-item .icon img {
+  width: 129px;
+  height: 129px;
+}
+
+.video-item p {
+  font-size: 30px;
+  padding: 30px 40px;
+}
+
+.video-content {
+  display: flex;
+}
+
+.footer {
+  position: relative;
+  background-image: url(./assets/bg-book-green.png);
+}
+
+.footer__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 60px 80px;
+}
+
+.footer__overlay > div {
+  width: 33%;
+  padding: 0 60px;
+}
+
+.footer__contact__infor__main {
+  color: #fad126;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.footer__contact__infor__item {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer__social {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__social__item {
+  display: inline-block;
+  padding-right: 12px;
+}
+
+.footer__register {
+  align-self: flex-start;
+}
+
+.pointer {
+  cursor: pointer;
+}
