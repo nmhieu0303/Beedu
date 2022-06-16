@@ -40,6 +40,10 @@ body {
   color: #fbad18;
 }
 
+.nav-item:last-child:hover > * {
+  color: #0d6efd;
+}
+
 .carousel {
   background: url('./assets/detailed-back-s.png');
   height: 780px;
@@ -202,7 +206,6 @@ body {
 
 .footer__social__item {
   display: inline-block;
-  padding-right: 12px;
 }
 
 .footer__register {
