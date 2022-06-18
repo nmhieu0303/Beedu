@@ -48,7 +48,39 @@
         <span class="action__icon"><i class="fa-solid fa-circle-user"></i></span>
       </div>
     </header>
-    <div class="carousel"></div>
+    <div class="carousel">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100" data-bs-interval="1000">
+            <img src="./assets/detailed-back-s.png" class="d-block w-100 mw-100 mh-100" alt="Carousel 1" />
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./assets/edu-1.jpg" class="d-block w-100 mh-100" alt="Carousel 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/edu-2.jpg" class="d-block w-100 mh-100" alt="Carousel 3" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon btn-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon btn-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
     <div class="news">
       <h3>Tin tức chính</h3>
       <div class="news-body">
@@ -91,19 +123,81 @@
     <div class="video">
       <h3>Video</h3>
       <div class="video-content">
-        <div class="video-item">
-          <div class="icon">
-            <img src="./assets/Group 3539.png" alt="" />
+        <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <div class="d-flex">
+                <div class="video-item border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="icon">
+                    <img src="./assets/Group 3539.png" alt="" />
+                  </div>
+                  <img src="./assets/gv.png" alt="#" />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="video-item border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="icon">
+                    <img src="./assets/Group 3539.png" alt="" />
+                  </div>
+                  <img src="./assets/edu-2.jpg" alt="#" />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="d-flex">
+                <div class="video-item border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="icon">
+                    <img src="./assets/Group 3539.png" alt="" />
+                  </div>
+                  <img src="./assets/gv.png" alt="#" />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="video-item border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="icon">
+                    <img src="./assets/Group 3539.png" alt="" />
+                  </div>
+                  <img src="./assets/edu-2.jpg" alt="#" />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="d-flex">
+                <div class="video-item border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="icon">
+                    <img src="./assets/Group 3539.png" alt="" />
+                  </div>
+                  <img src="./assets/gv.png" alt="#" />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="video-item border" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="icon">
+                    <img src="./assets/Group 3539.png" alt="" />
+                  </div>
+                  <img src="./assets/edu-2.jpg" alt="#" />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <img src="./assets/gv.png" alt="#" />
-          <p>Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="video-item">
-          <div class="icon">
-            <img src="./assets/Group 3539.png" alt="" />
-          </div>
-          <img src="./assets/gv.png" alt="#" />
-          <p>Lorem ipsum dolor sit amet</p>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon btn-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon btn-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
@@ -140,7 +234,35 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <iframe
+              width="100%"
+              height="500px"
+              src="https://www.youtube.com/embed/eJjsb0TXefQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
     <script>
       const detailItems = document.querySelectorAll('.details');
       detailItems.forEach((item) => {
