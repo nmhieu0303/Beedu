@@ -33,7 +33,7 @@
                 </div>
                 <ul class="content__account_list list-group list-group-flush mt-3">
                     <li class="list-group-item list-group-item-action">
-                        <a href="#" class="acount_item text-decoration-none text-dark">
+                        <a onclick="login(0)" href="./../home/index.html" class="acount_item text-decoration-none text-dark">
                             <div class="d-flex flex-row align-items-center">
                                 <div class="acount_item__avatar">
                                     <img src="./images/user-icon.png" alt="" class="avatar--img">
@@ -46,7 +46,7 @@
                         </a>
                     </li>
                     <li class="list-group-item list-group-item-action">
-                        <a href="#" class="acount_item text-decoration-none text-dark">
+                        <a onclick="login(1)" href="./../home/index.html" class="acount_item text-decoration-none text-dark">
                             <div class="d-flex flex-row align-items-center">
                                 <div class="acount_item__avatar">
                                     <img src="./images/user-icon.png" alt="" class="avatar--img">
@@ -59,7 +59,7 @@
                         </a>
                     </li>
                     <li class="list-group-item list-group-item-action">
-                        <a href="#" class="acount_item text-decoration-none text-dark">
+                        <a onclick="login(2)" href="./../home/index.html" class="acount_item text-decoration-none text-dark">
                             <div class="d-flex flex-row align-items-center">
                                 <div class="acount_item__avatar">
                                     <img src="./images/user-icon.png" alt="" class="avatar--img">
@@ -72,7 +72,7 @@
                         </a>
                     </li>
                     <li class="list-group-item list-group-item-action">
-                        <a href="#" class="acount_item text-decoration-none text-dark">
+                        <a onclick="login(3)" href="./../home/index.html" class="acount_item text-decoration-none text-dark">
                             <div class="d-flex flex-row align-items-center">
                                 <div class="acount_item__avatar">
                                     <img src="./images/user-icon.png" alt="" class="avatar--img">
@@ -85,7 +85,7 @@
                         </a>
                     </li>
                     <li class="list-group-item list-group-item-action">
-                        <a href="#" class="other-account acount_item text-decoration-none text-dark">
+                        <a href="./../home/index.html" class="other-account acount_item text-decoration-none text-dark">
                             <div class="d-flex flex-row align-items-center">
                                 <div class="acount_item__avatar">
                                     <img src="./images/user-icon-gray.png" alt="" class="avatar--img">
@@ -113,6 +113,13 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
 
+    <script>
+        function login(index){
+            const fullname = document.getElementsByClassName('fullname')[index].innerText
+            const email = document.getElementsByClassName('email')[index].innerText
+            localStorage.setItem('user',JSON.stringify({fullname:fullname,email}))
+        }   
+    </script>
 </body>
 
 </html>
