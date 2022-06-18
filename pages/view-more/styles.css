@@ -258,6 +258,9 @@ body {
   position: relative;
   top: 160px;
   background-image: url(./assets/bg-book-green.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer__overlay {
