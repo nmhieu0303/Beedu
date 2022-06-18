@@ -1,13 +1,10 @@
 .home-page1 {
   display: flex;
-  height: 101px;
   justify-content: space-between;
-}
+  align-items: center;
 
-.home-page_logo {
-  width: 164.28px;
-  height: 40.8px;
-  margin: 30px;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
 }
 
 .home-page1_nav {
@@ -19,6 +16,16 @@
 .home-page1_nav ul {
   display: flex;
   justify-content: center;
+}
+
+.nav-link--custom {
+  color: #000;
+  font-size: 24px !important;
+}
+
+#active {
+  border-bottom: 2px solid #fbad18;
+  color: #fbad18;
 }
 
 .home-page1_nav ul li a {
@@ -71,6 +78,7 @@
   z-index: 2;
   padding: 10px 20px;
 }
+
 .slick-dots {
   position: absolute;
   bottom: 0;
@@ -91,24 +99,23 @@
   border: none;
   outline: none;
 }
+
 .slick-dots .slick-active button {
   background-color: var(--hover-text);
 }
-/* .home_login{
-    position: absolute;
-    z-index: 999;
-    bottom: -10%;
-} */
+
 #home_login {
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
   bottom: 10%;
-  text-decoration: none;
   color: white;
-  padding: 5px 15px;
-  width: 150px;
   text-align: center;
-  border: 1px solid #3c74b3;
   border-radius: 7px;
   background-color: #3c74b3;
+
+  padding: 24px 48px;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
