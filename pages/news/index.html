@@ -84,7 +84,7 @@
     <div class="news">
       <h3>Tin tức chính</h3>
       <div class="news-body">
-        <div class="news-left pointer detail" onclick="window.location.href='./../news-detail/index.html'">
+        <div class="news-left pointer detail">
           <img src="./assets/giao-duc-040920.png" alt="#" />
           <h6>25/04/2022</h6>
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscin gelit, sevd do eiusmod.</h4>
@@ -98,12 +98,7 @@
           </p>
         </div>
         <div class="news-right">
-          <img
-            src="./assets/students-knowin.png"
-            alt="#"
-            onclick="window.location.href='./../news-detail/index.html'"
-            class="pointer detail"
-          />
+          <img src="./assets/students-knowin.png" alt="#" class="pointer detail" />
           <h6>25/04/2022</h6>
           <h4 class="pointer detail">Lorem ipsum dolor sit amet, consecteturadipi scing elit, sed do eiusmod.</h4>
           <p>
@@ -264,7 +259,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const detailItems = document.querySelectorAll('.details');
+      const detailItems = document.querySelectorAll('.detail');
       detailItems.forEach((item) => {
         item.addEventListener('click', () => {
           window.location.href = './../news-detail/index.html';
