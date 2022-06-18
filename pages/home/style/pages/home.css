@@ -1,9 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-* {
-  font-family: 'Baloo 2', cursive;
-}
 
 .home-page1 {
   display: flex;
@@ -122,31 +116,3 @@ html {
 
 
 /* Header */
-
-header.header {
-  padding-left: 100px !important;
-  padding-right: 100px !important;
-}
-
-.nav-link--custom {
-  color: #000!important;
-  font-size: 24px!important;
-}
-
-.action__icon {
-  font-size: 24px!important;
-  padding: 0 8px!important;
-}
-
-.nav-item:first-child{
-  border-bottom: 2px solid #fbad18!important;
-}
-
-.nav-item:first-child * {
-  color: #fbad18!important;
-}
-
-.nav-item:last-child{
-  display: flex!important;
-  align-items: center!important;
-}
