@@ -45,7 +45,6 @@ body {
 }
 
 .carousel {
-  background: url('./assets/detailed-back-s.png');
   height: 780px;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,13 +126,17 @@ body {
 }
 
 .video {
-  padding-left: 140px;
-  margin-bottom: 228px;
+  padding: 40px 0 40px 140px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .video h3 {
   font-size: 48px;
   margin-bottom: 35px;
+  align-self: flex-start;
 }
 
 .video img {
@@ -142,7 +145,6 @@ body {
 }
 
 .video-item {
-  width: 774px;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-right: 69px;
@@ -150,8 +152,9 @@ body {
 
 .video-item .icon {
   position: absolute;
-  top: 160px;
-  left: 323px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
   cursor: pointer;
 }
 
@@ -167,11 +170,16 @@ body {
 
 .video-content {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
   position: relative;
   background-image: url(./assets/bg-book-green.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .footer__overlay {
@@ -214,4 +222,24 @@ body {
 
 .pointer {
   cursor: pointer;
+}
+
+.btn-icon {
+  width: 4rem !important;
+  height: 4rem !important;
+}
+
+#carouselExampleInterval2 {
+  height: unset !important;
+}
+
+@media only screen and (max-width: 1440px) {
+  .news-left {
+    padding: 0 20px;
+    max-width: 750px;
+  }
+
+  .news-right {
+    padding: 0 20px;
+  }
 }
