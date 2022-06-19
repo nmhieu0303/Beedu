@@ -33,7 +33,33 @@
                 </div>
                 <ul class="content__account_list list-group list-group-flush mt-3">
                     <li class="list-group-item list-group-item-action">
-                        <a href="./../signUpSuccess/index.html" class="acount_item text-decoration-none text-dark">
+                        <a onclick="changePassSuccess('Nguyễn Anh Tài','tainguyenanh.edu@gmail.com')" class="acount_item text-decoration-none text-dark">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="acount_item__avatar">
+                                    <img src="./images/user-icon.png" alt="" class="avatar--img">
+                                </div>
+                                <div class="account_item__desc ml-3">
+                                    <h5 class="fullname font-weight-bold">Nguyễn Anh Tài</h5>
+                                    <h6 class="email">tainguyenanh.edu@gmail.com</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a onclick="changePassSuccess('Lê Trọng Thức','thucletrong.edu@gmail.com')" class="acount_item text-decoration-none text-dark">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="acount_item__avatar">
+                                    <img src="./images/user-icon.png" alt="" class="avatar--img">
+                                </div>
+                                <div class="account_item__desc ml-3">
+                                    <h5 class="fullname font-weight-bold">Lê Trọng Thức</h5>
+                                    <h6 class="email">thucletrong.edu@gmail.com</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a onclick="changePassSuccess('Lê Minh Đức','abc.edu@gmail.com')" class="acount_item text-decoration-none text-dark">
                             <div class="d-flex flex-row align-items-center">
                                 <div class="acount_item__avatar">
                                     <img src="./images/user-icon.png" alt="" class="avatar--img">
@@ -46,40 +72,14 @@
                         </a>
                     </li>
                     <li class="list-group-item list-group-item-action">
-                        <a href="./../signUpSuccess/index.html" class="acount_item text-decoration-none text-dark">
+                        <a onclick="changePassSuccess('Lê Thanh Toàn','toanlethanh.edu@gmail.com')" class="acount_item text-decoration-none text-dark">
                             <div class="d-flex flex-row align-items-center">
                                 <div class="acount_item__avatar">
                                     <img src="./images/user-icon.png" alt="" class="avatar--img">
                                 </div>
                                 <div class="account_item__desc ml-3">
-                                    <h5 class="fullname font-weight-bold">Lê Minh Đức</h5>
-                                    <h6 class="email">abc.edu@gmail.com</h6>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="list-group-item list-group-item-action">
-                        <a href="./../signUpSuccess/index.html" class="acount_item text-decoration-none text-dark">
-                            <div class="d-flex flex-row align-items-center">
-                                <div class="acount_item__avatar">
-                                    <img src="./images/user-icon.png" alt="" class="avatar--img">
-                                </div>
-                                <div class="account_item__desc ml-3">
-                                    <h5 class="fullname font-weight-bold">Lê Minh Đức</h5>
-                                    <h6 class="email">abc.edu@gmail.com</h6>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="list-group-item list-group-item-action">
-                        <a href="./../signUpSuccess/index.html" class="acount_item text-decoration-none text-dark">
-                            <div class="d-flex flex-row align-items-center">
-                                <div class="acount_item__avatar">
-                                    <img src="./images/user-icon.png" alt="" class="avatar--img">
-                                </div>
-                                <div class="account_item__desc ml-3">
-                                    <h5 class="fullname font-weight-bold">Lê Minh Đức</h5>
-                                    <h6 class="email">abc.edu@gmail.com</h6>
+                                    <h5 class="fullname font-weight-bold">Lê Thanh Toàn</h5>
+                                    <h6 class="email">toanlethanh.edu@gmail.com</h6>
                                 </div>
                             </div>
                         </a>
@@ -112,6 +112,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
+    <script>
+        function changePassSuccess(fullname,email){
+            localStorage.setItem('user',JSON.stringify({fullname,email}))
+            document.location.href="./../signUpSuccess/index.html"
+        }
+
+    </script>
 </body>
 
 </html>
