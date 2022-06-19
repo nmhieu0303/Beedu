@@ -38,7 +38,7 @@
         <p class="login__or"><span>HOẶC</span></p>
         <form class="login__form">
           <div class="text-field">
-            <input autocomplete="off" type="text" id="email" placeholder="Email của bạn" />
+            <input autocomplete="off" type="email" id="email" placeholder="Email của bạn" />
           </div>
           <div class="text-field">
             <input autocomplete="off" type="password" id="password" placeholder="Mật khẩu" />
@@ -49,9 +49,9 @@
               <input type="checkbox" id="savePw" />
               <label for="savePw">Ghi nhớ mật khẩu</label>
             </div>
-            <a href="#">Quên mật khẩu</a>
+            <a href="./../fogetPassword/index.html">Quên mật khẩu</a>
           </div>
-          <button class="btn btn-block btn-primary btn_submit">ĐĂNG NHẬP</button>
+          <a id="btn_submit" class="btn btn-block btn-primary btn_submit">ĐĂNG NHẬP</a>
         </form>
       </div>
       <div class="login_right">
@@ -87,6 +87,18 @@
         var input = $('#password');
         input.attr('type') === 'password' ? input.attr('type', 'text') : input.attr('type', 'password');
       });
+
+      $('#btn_submit').on('click',function(e){
+        const email = document.getElementById('email').value
+        const pass = document.getElementById('savePw').value
+        if(!email || !pass){
+          alert('Email hoặc mật khẩu không hợp lê!')
+          e.defaultPrevented()
+        }else{
+          localStorage.setItem('user',JSON.stringify({fullname:"Vo Le Thanh",email: email}))
+          document.location.href = '/pages/home/index.html'
+        }
+      })
     </script>
   </body>
 </html>
