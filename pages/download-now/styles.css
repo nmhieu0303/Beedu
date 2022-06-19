@@ -146,6 +146,7 @@ body {
   justify-content: space-between;
   padding: 12px 32px;
   border-radius: 100rem;
+  background-color: #fff;
 }
 
 .download-detail__link:first-child {
