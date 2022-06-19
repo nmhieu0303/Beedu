@@ -32,11 +32,11 @@ a.back__btn {
 .signup {
     display: flex;
     background-color: white;
-    align-items: center;
     justify-content: space-between;
 
     margin: 0px auto;
     padding: 75px;
+    padding-top: 10px;
     width: 90%;
     min-height: 400px;
     height: 55vh;
@@ -52,9 +52,12 @@ a.back__btn {
 }
 
 .signup .signup_right {
+    position:relative;
+    transform: translateY(-14%);
+
     width: 43%;
     height: auto;
-    min-height: calc(100% + 137px + 137px);
+    min-height: calc(100% + 100px + 100px);
 
     padding: 45px 15px;
     background-color: white;
@@ -250,11 +253,11 @@ a.back__btn {
     margin-right: auto;
 
     width: 30%;
-    height: 30%;
+    height: 55%;
 }
 
 .signup_left>p {
-    font-size: 19px;
+    font-size: 16px;
     padding-bottom: 20px;
 }
 
