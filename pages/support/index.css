@@ -177,3 +177,14 @@
     height: 60px;
 
 }
+.support{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    font-size: 23px;
+}
+.contact{
+    position: absolute;
+    top: 90%;
+    right: 150px;
+}
