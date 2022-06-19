@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quên mật khẩu</title>
+    <title>Nhập mã xác nhận</title>
     <link rel="shortcut icon" href="../../assets/images/logo-footer-removebg-preview.png">
     <link rel="stylesheet" href="../../styles/styles.css">
     <link rel="stylesheet" href="./style.css">
@@ -25,14 +25,22 @@
     <div class="w-100 h-100 d-flex justify-content-center align-items-center">
         <div id="modal" class="shadow-lg bg-white rounded">
             <img src="./images/fogot-pass.png" alt="bee" class="modal__image">
-            <h4 class="modal__notifiction">Quên mật khẩu!</h4>
+            <h4 class="modal__notifiction">Nhập mã xác nhận</h4>
             <p class="text-secondary mx-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <div class="text-field my-5 mx-4 d-flex flex-row">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <input autocomplete="off" type="tel" id="phone" placeholder="Nhập số điện thoại của bạn" pattern="[0-9]{10}" required/>
+            <div class="my-5 mx-4 d-flex justify-content-center">
+                <form id="codeverifyForm">
+                    <div id="inputs">
+                        <input type="text" class="digit" id="verificationCodeDigit1" minlength="1" maxlength="1" required>
+                        <input type="text" class="digit" id="verificationCodeDigit2" minlength="1" maxlength="1" required>
+                        <input type="text" class="digit" id="verificationCodeDigit3" minlength="1" maxlength="1" required>
+                        <input type="text" class="digit" id="verificationCodeDigit4" minlength="1" maxlength="1" required>
+                    </div>
+                </form>
             </div>
+            <p class="text-secondary mb-0">Bạn không nhận được mã xác nhận?</p>
+            <a id="re-send" class="text-direction-none mb-5 d-block">Gửi lại mã</a>
            
-            <a href="./../inputOTP/index.html" class="btn-submit btn btn-block btn-primary btn-lg">GỬI</a>
+            <a href="./../changePassword/index.html" class="btn-submit btn btn-block btn-primary btn-lg">GỬI</a>
         </div>
     </div>
 
@@ -45,6 +53,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxlp2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
+ 
 </body>
 
 </html>

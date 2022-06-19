@@ -5,17 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="shortcut icon" href="./../../assets/images/logo-footer-removebg-preview.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
+    <div id="header"></div>
     <div class="banner">
       <img src="./assets/young-graphic-d.png" alt="" />
       <img src="./assets/Path 11.png" alt="" />
@@ -110,5 +104,45 @@
         </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="footer__overlay">
+        <div class="footer__logo">
+          <img src="./assets/logo-footer-removebg-preview.png" alt="Beedu logo web" />
+        </div>
+        <div class="footer__contact__infor">
+          <h3 class="footer__contact__infor__main">Liên hệ với chúng tôi</h3>
+          <p class="footer__contact__infor__item">
+            Adress: Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          </p>
+          <p class="footer__contact__infor__item">Email: abcdzyx@gmail.com</p>
+          <p class="footer__contact__infor__item">Phone number: +84 0900 909 787</p>
+          <ul class="footer__social">
+            <li class="footer__social__item">
+              <img src="./assets/fb-icon.png" alt="Facebook icon" />
+            </li>
+            <li class="footer__social__item">
+              <img src="./assets/insta-icon.png" alt="Facebook icon" />
+            </li>
+            <li class="footer__social__item">
+              <img src="./assets/be-icon.png" alt="Facebook icon" />
+            </li>
+          </ul>
+        </div>
+        <div class="footer__register">
+          <h3 class="footer__contact__infor__main">Đăng ký</h3>
+          <p class="footer__contact__infor__item">
+            Adress: Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          </p>
+          <input type="text" class="form-control" placeholder="Email" />
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(function(){$('#header').load('./../../component/header/index.html') })     
+    </script>
   </body>
 </html>

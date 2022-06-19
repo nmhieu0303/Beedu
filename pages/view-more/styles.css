@@ -70,12 +70,19 @@ body {
 .nav-item:last-child {
   display: flex;
   align-items: center;
-  border-bottom: 2px solid #fbad18;
+  border-bottom: 3px solid #fbad18;
+}
+.nav .nav-item:last-child .dropdown>a{
+  color: #fbad18!important;
 }
 
-.nav-item:last-child * {
-  color: #fbad18;
+.nav .nav-item:first-child {
+  border-bottom: none!important;
 }
+.nav .nav-item:first-child >a{
+  color: #000!important;
+}
+
 
 /* BANNER */
 .banner {

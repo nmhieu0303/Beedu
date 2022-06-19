@@ -36,7 +36,7 @@
                     <div><img src="../../assets/images/icons/google-logo.svg" alt=""></div>
                     <span>Đăng kí bằng google </span>
                 </a>
-                <a href="./../loginWithFacebook/index.html">
+                <a href="./../signUpWithFacebook/index.html">
                     <div><img src="../../assets/images/icons/fb-logo.svg" alt=""></div>
                     <span>Đăng kí bằng facebook</span>
                 </a>
@@ -57,7 +57,7 @@
                     <input autocomplete="off" type="password" id="passwordConfirm" placeholder="Xác nhạn mật khẩu" />
                     <span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-passwordConfirm"></span>
                 </div>
-                <a href="#" class="btn btn-block btn-primary btn_submit">ĐĂNG KÍ</a>
+                <a id="btn_submit" class="btn btn-block btn-primary btn_submit">ĐĂNG KÍ</a>
             </form>
         </div>
     </div>
@@ -83,6 +83,17 @@
             var input = $("#passwordConfirm");
             input.attr('type') === 'password' ? input.attr('type', 'text') : input.attr('type', 'password')
         });
+
+        $('#btn_submit').on('click',function(e){
+        const email = document.getElementById('email').value
+        const name = document.getElementById('name').value
+        if(!email || !name){
+          alert('Email hoặc mật khẩu không hợp lê!')
+        }else{
+          localStorage.setItem('user',JSON.stringify({fullname:name,email}))
+          document.location.href = '/pages/home/index.html'
+        }
+      })
     </script>
 </body>
 
