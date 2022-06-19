@@ -15,14 +15,14 @@ body {
 /* GENERAL */
 
 .btn-custom {
-  padding: 24px 48px;
-  font-size: 24px;
+  padding: 24px 48px !important;
+  font-size: 24px !important;
   cursor: pointer !important;
 }
 
 .btn-custom--primary {
-  background-color: #3c74b3;
-  color: white;
+  background-color: #3c74b3 !important;
+  color: white !important;
 }
 
 .btn-custom--primary:hover svg path {
@@ -72,17 +72,16 @@ body {
   align-items: center;
   border-bottom: 3px solid #fbad18;
 }
-.nav .nav-item:last-child .dropdown>a{
-  color: #fbad18!important;
+.nav .nav-item:last-child .dropdown > a {
+  color: #fbad18 !important;
 }
 
 .nav .nav-item:first-child {
-  border-bottom: none!important;
+  border-bottom: none !important;
 }
-.nav .nav-item:first-child >a{
-  color: #000!important;
+.nav .nav-item:first-child > a {
+  color: #000 !important;
 }
-
 
 /* BANNER */
 .banner {
@@ -308,7 +307,8 @@ body {
   align-self: flex-start;
 }
 
-#contact-btn, #download-app-btn {
+#contact-btn,
+#download-app-btn {
   background-color: #3c74b3 !important;
   color: white !important;
 }
