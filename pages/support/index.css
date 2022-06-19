@@ -6,7 +6,7 @@
 
 .body {
     max-width: 1089px;
-    margin: 100px auto;
+    margin: 40px auto;
 }
 
 .clear {
@@ -226,12 +226,13 @@
   }
 .support{
     position: absolute;
-    top: 100px;
-    left: 200px;
+    top: 130px;
+    left: 5%;
     font-size: 23px;
 }
 .contact{
     position: fixed;
     top: 50vh;
     right: 0;
+    z-index: 1;
 }
