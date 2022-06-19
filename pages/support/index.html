@@ -15,8 +15,8 @@
 </head>
 
 <body>
+    <div id="header"></div>
     <div class="body">
-
         <div class="status">
             <div class="status-header">
                 <div class="item">
@@ -126,10 +126,51 @@
             <p>Tiếp</p>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer__overlay">
+          <div class="footer__logo">
+            <img src="./assets/beedu_logo-web.png" alt="Beedu logo web" />
+          </div>
+          <div class="footer__contact__infor">
+            <h3 class="footer__contact__infor__main">Liên hệ với chúng tôi</h3>
+            <p class="footer__contact__infor__item">
+              Adress: Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            </p>
+            <p class="footer__contact__infor__item">Email: abcdzyx@gmail.com</p>
+            <p class="footer__contact__infor__item">Phone number: +84 0900 909 787</p>
+            <ul class="footer__social">
+              <li class="footer__social__item">
+                <img src="./assets/fb-icon.png" alt="Facebook icon" />
+              </li>
+              <li class="footer__social__item">
+                <img src="./assets/instagram-icon.png" alt="Instagram icon" />
+              </li>
+              <li class="footer__social__item">
+                <img src="./assets/be-icon.png" alt="Facebook icon" />
+              </li>
+            </ul>
+          </div>
+          <div class="footer__register">
+            <h3 class="footer__contact__infor__main">Đăng ký</h3>
+            <p class="footer__contact__infor__item">
+              Adress: Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            </p>
+            <input type="text" class="form-control" placeholder="Email" />
+          </div>
+        </div>
+      </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function () { $('#header').load('./../../component/header/index.html') })
+        const user = JSON.parse(localStorage.getItem('user'))
+        const startBtn = document.getElementById('home_login')
+        if (user) {
+            startBtn.setAttribute('style', 'display:none')
+        } else {
+            startBtn.setAttribute('style', 'display:block')
+        }
+    </script>
 </body>
 
 </html>
