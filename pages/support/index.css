@@ -180,11 +180,11 @@
 .support{
     position: absolute;
     top: 100px;
-    left: 200px;
+    left: 5%;
     font-size: 23px;
 }
 .contact{
     position: absolute;
     top: 90%;
-    right: 150px;
+    right: 5%;
 }
