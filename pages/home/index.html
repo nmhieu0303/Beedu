@@ -6,68 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="shortcut icon" href="../../assets/images/logo-footer-removebg-preview.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    
   </head>
 
   <body>
-    <header class="d-flex justify-content-between align-items-center header shadow sticky-top bg-light">
-      <div class="header__logo">
-        <img src="./asset/imgs/beedu-logo.jpg" alt="Beedu logo" />
-      </div>
-      <ul class="nav">
-        <li class="nav-item active">
-          <a href="./../home/index.html" class="nav-link nav-link--custom">Trang chủ</a>
-        </li>
-        <li class="nav-item">
-          <a href="./../news/index.html" class="nav-link nav-link--custom">Tin tức</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link nav-link--custom">Giáo dục</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link nav-link--custom">Kiểm tra</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link nav-link--custom">Trò chuyện</a>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-            <a
-              class="nav-link nav-link--custom dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Xem thêm
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="./../view-more/index.html">Liên hệ</a></li>
-              <li>
-                <hr class="dropdown-divider m-0" />
-              </li>
-              <li><a class="dropdown-item" href="./../about-us/index.html">Về chúng tôi</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <div class="actions"></div>
-    </header>
-
+    
+    <div id="header"></div>
     <div class="home-page_main">
       <div class="image-slider">
         <div class="image-item">
@@ -104,7 +49,6 @@
 
       <a id="home_login" href="./../signIn/index.html">Bắt đầu</a>
 
-      <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script
         type="text/javascript"
@@ -367,50 +311,17 @@
       </div>
     </footer>
     <!-- END Page 8 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+      
     <script>
-      const user = JSON.parse(localStorage.getItem('user'));
-      const contentHTML = user
-        ? // Have logined
-          `<span class="action__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-        <span class="action__icon"><i class="fa-solid fa-bell"></i></span>
-        <div class="dropdown">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://ui-avatars.com/api/?background=random&name=${user.fullname}" alt="Avatar" class="avatar">
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
-            <div class="d-flex flex-row align-items-center p-3">
-                <div class="info__avatar mr-3">
-                    <img src="https://ui-avatars.com/api/?background=random&name=${user.fullname}" alt=""avatar class="avatar--img">
-                </div>
-                <div class="info__desc ml-3">
-                    <h6 class="fullname mb-0 font-weight-bold">Lê Minh Đức</h6>
-                    <p class="email mb-0">abc.edu@gmail.com</p>
-                </div>
-            </div>
-            <li><hr class="dropdown-divider m-0"></li>
-            <li><a class="dropdown-item" href="#">Hồ sơ</a></li>
-            <li><a class="dropdown-item" href="#">Trợ giúp</a></li>
-            <li><a class="dropdown-item" href="#">Cài đặt</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
-          </ul>
-        </div>`
-        : // Haven't login yet
-          `<a href="./../signIn/" class="btn btn-warning text-direction-none text-light">
-          Đăng nhập/Đăng kí<span class="action__icon"><i class="fa-solid fa-circle-user"></i></span>
-        </a>`;
-      const actionDiv = document.getElementsByClassName('actions')[0];
-      actionDiv.innerHTML = contentHTML;
+        $(function(){$('#header').load('./../../component/header/index.html') })     
     </script>
+</script>
+
   </body>
 </html>
