@@ -307,3 +307,8 @@ body {
 .footer__register {
   align-self: flex-start;
 }
+
+#contact-btn, #download-app-btn {
+  background-color: #3c74b3 !important;
+  color: white !important;
+}
