@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education
-        
+
     </title>
     <link rel="stylesheet" href="./index.css">
 </head>
@@ -20,21 +20,21 @@
                 <h4>Hãy giúp tôi tìm ...</h4>
                 <p>Trường ở Quận/Huyện</p>
                 <select name="" id="">
-                    <option value=""></option>
+                    <!-- <option value=""></option> -->
                     <option value="">Quận Thanh Xuân</option>
                     <option value="">Quận Đống Đa</option>
                 </select>
                 <p>Tên trường</p>
-                <select name="" id="">
-                    <option value=""></option>
+                <select onchange="handleChange(event)">
+                    <!-- <option value=""></option> -->
                     <option value="">Tiểu học Quang Trung</option>
-                    <option value="">Tiểu học Kim Liên</option>
+                    <option value="kimlien">Tiểu học Kim Liên</option>
                 </select>
             </div>
         </div>
         <div class="right">
             <div class="content">
-                <div class="one" style="transform: translateX(30px);">
+                <div class="one kimlien" style="transform: translateX(30px);">
                     <img src="./assets/Component 156 –.png" alt="">
                     <img src="./assets/Component 161 –.png" alt="">
                     <img src="./assets/Component 162 –.png" alt="">
@@ -47,7 +47,7 @@
                     <img src="./assets/Component 166 –.png" alt="">
 
                 </div>
-                <div class="three"  style="transform: translateX(-30px);">
+                <div class="three" style="transform: translateX(-30px);">
                     <img src="./assets/Component 158 –.png" alt="">
                     <img src="./assets/Component 159 –.png" alt="">
                     <img src="./assets/Component 164 –.png" alt="">
@@ -59,8 +59,9 @@
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
-        $(function(){$('#header').load('./../../component/header/index.html') })     
-     </script>
+        $(function () { $('#header').load('./../../component/header/index.html') })  
+    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
