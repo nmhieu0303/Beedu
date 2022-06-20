@@ -1,3 +1,8 @@
+ a{
+  text-decoration: none;
+
+}
+
 .nav .nav-item a {
   color: #000 !important;
 }
@@ -53,7 +58,10 @@ img.info--icon {
 .edit-info--btn i {
   margin-right: 5px;
 }
-
+li > a {
+  text-decoration: none;
+  color: black;
+}
 /* Sub navigate */
 
 .sub-navigate .nav-link.active {
