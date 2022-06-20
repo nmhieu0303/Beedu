@@ -19,19 +19,28 @@
     background-image: url(../../assets/images/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
+    
 }
+.setting__main{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-around;
+  align-items: center;
 
-.setting__left >  p {
+}
+.setting >  p {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 5%;
 
 }
-
+.setting__content {
+  width: 70%;
+}
 .setting__content >p:first-child{
     font-size: 25px;
     font-weight: 500;
+   
 }
 .setting__content > p:last-child{
     font-size: 18px;
