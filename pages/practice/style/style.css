@@ -34,3 +34,10 @@
     transform: translateX(60%);
 }
 
+.subject-item{
+    width: 70px;
+}
+
+.subject-item img{
+    width:100%
+}
