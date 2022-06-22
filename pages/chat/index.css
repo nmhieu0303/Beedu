@@ -218,6 +218,10 @@ body {
   color: #fff !important;
 }
 
+#chat__group__detail .chat__message__container {
+  background-image: linear-gradient(to bottom, #e8f0fe, #fefac3);
+}
+
 @media only screen and (max-width: 1440px) {
   .chat__item__avatar::after {
     right: 3%;
