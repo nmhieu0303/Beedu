@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+}
+
+.chat-container {
+  width: 99%;
+}
+
+.list-group-item {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.list-group-item:hover {
+  background-color: #e8f0fe;
+}
+
+.chat__section {
+  font-size: 40px;
+  position: relative;
+}
+
+.chat__section--active::before {
+  position: absolute;
+  left: -28px;
+  top: -8px;
+
+  content: '';
+  width: 16px;
+  height: 100%;
+  display: inline-block;
+  background: #fcc423;
+}
+
+.chat-search-container {
+  width: 90%;
+}
+
+.chat-search-plus {
+  font-size: 24px;
+}
+
+.chat-search-plus i {
+  vertical-align: middle;
+}
+
+.chat-search-icon {
+  position: absolute;
+  top: 55%;
+  right: 3%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.chat__item__avatar {
+  position: relative;
+  width: 15%;
+}
+
+.chat__item__avatar::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  background-color: #4bff00;
+  border-radius: 100%;
+  bottom: 0;
+  right: 25%;
+}
+
+.chat__item__user {
+  width: 85%;
+}
+
+.chat__item__user__name {
+  font-size: 22px;
+}
+
+.chat__item__user__name--active {
+  font-weight: 500;
+}
+
+.chat__item__user__msg {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 80%;
+}
+
+.chat__item__user__time {
+  font-size: 14px;
+}
+
+.chat__item__user__count {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 14px;
+
+  border-radius: 100%;
+  background-color: #f98201;
+  color: #fff;
+}
+
+.chat__item__detail {
+  width: 100%;
+}
+
+.chat__item__container {
+  height: 800px;
+  overflow-y: scroll;
+}
+
+.chat__item__container::-webkit-scrollbar {
+  width: 10px;
+}
+.chat__item__container::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+.chat__item__container::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 5px;
+}
+.chat__item__container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #00c6ff);
+}
+
+@media only screen and (max-width: 1440px) {
+  .chat__item__avatar::after {
+    right: 3%;
+  }
+
+  .chat__section--active::before {
+    width: 4px;
+    left: -8px;
+  }
+
+  .chat-search-container {
+    width: 80%;
+  }
+
+  .chat-search-plus {
+    transform: translateX(-100%);
+  }
+
+  .chat__item__user__count {
+    padding: 0px 6px;
+  }
+}

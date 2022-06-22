@@ -1,37 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./index.css" />
-    
-</head>
-<body>
-<!-- HEADER -->
-<div id="header"></div>
-<div class="chat">
-
-    
-</div>
-
-
-
-
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <section class="chat-container">
+      <div class="row">
+        <div class="col-xs-12 col-md-1 p-0">
+          <ul class="list-group pt-4 d-flex flex-column justify-content-center align-items-center">
+            <li class="list-group-item border-0 chat__section chat__section--active">
+              <i class="fa-solid fa-comments"></i>
+            </li>
+            <li class="list-group-item border-0 chat__section">
+              <i class="fa-solid fa-people-roof"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-3 p-0">
+          <div class="chat__item__container">
+            <div class="pt-4 pb-2 d-flex justify-content-between align-items-center">
+              <div class="position-relative chat-search-container">
+                <input type="text" class="form-control" />
+                <span class="chat-search-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div>
+              <span class="chat-search-plus px-3">
+                <i class="fa-solid fa-circle-plus"></i>
+              </span>
+            </div>
+            <ul class="list-group pt-3 pe-2">
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-1.png" alt="Avatar 1" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name chat__item__user__name--active">Elizabeth 3E</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                      <span class="chat__item__user__count">5</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-2.png" alt="Avatar 2" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Tommy Tèo 3A</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-3.png" alt="Avatar 3" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Cô Minh Hằng</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-4.png" alt="Avatar 4" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Cô Linh Đan</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-5.png" alt="Avatar 5" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Cô Hiền</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-6.png" alt="Avatar 6" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Thầy Lâm</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-7.png" alt="Avatar 7" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Hồng Thái 5C</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-8.png" alt="Avatar 8" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Minh 3D</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-10.png" alt="Avatar 10" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Thầy Typh</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Mẹ Hằng</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Mẹ Hằng</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Mẹ Hằng</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Mẹ Hằng</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-7 p-0">
+          <div class="d-flex justify-content-center align-items-center flex-fill h-100 chat__item__detail">
+            <img src="./assets/bee-chat.png" alt="Bee chat" />
+          </div>
+        </div>
+      </div>
+    </section>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $(function () { $('#header').load('./../../component/header/index.html') }) 
-        textarea = document.querySelector("#autoresizing");
-        textarea.addEventListener('input', autoResize, false);
-      
-        function autoResize() {
-            this.style.height = 'auto';
-            this.style.height = this.scrollHeight + 'px';
-        }    
+      $(function () {
+        $('#header').load('./../../component/header/index.html');
+      });
     </script>
-</body>
+  </body>
 </html>
