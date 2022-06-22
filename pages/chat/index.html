@@ -573,11 +573,14 @@
           </div>
         </div>
         <div class="col-xs-12 col-md-8 p-0 px-1">
-          <div class="d-flex justify-content-center align-items-center flex-fill h-100 chat__item__detail d-none">
+          <div
+            class="d-flex justify-content-center align-items-center flex-fill h-100 chat__item__detail"
+            id="startChat"
+          >
             <img src="./assets/bee-chat.png" alt="Bee chat" />
           </div>
           <div
-            class="chat__personal__detail--personal border-start h-100 position-relative"
+            class="chat__personal__detail--personal border-start h-100 position-relative d-none"
             id="chat__personal__detail"
           >
             <div class="chat__personal__detail__header p-3 w-100 d-flex justify-content-between align-items-center">
@@ -677,10 +680,10 @@
             <div class="chat__personal__detail__header p-3 w-100 d-flex justify-content-between align-items-center">
               <div class="chat__personal__detail__header__info">
                 <div class="position-relative chat__item__avatar--detail">
-                  <img src="./assets/avt-1.png" alt="Elizabeth" />
+                  <img src="./assets/gr-1.png" alt="Elizabeth" />
                 </div>
                 <div class="ps-3 d-flex justify-content-center align-items-start flex-column">
-                  <span class="chat__item__user__name">Elizabeth 3E</span>
+                  <span class="chat__item__user__name">Beedu Group</span>
                   <span>Đang hoạt động</span>
                 </div>
               </div>
@@ -744,7 +747,7 @@
                   </li>
                   <li class="list-group-item chat__message__item shadown chat__message__item--left">Lorem Ipsum</li>
                   <li class="list-group-item chat__message__item shadown chat__message__item--left">:))</li>
-                  <li class="list-group-item chat__message__item shadown">
+                  <li class="chat__message__item shadown">
                     <img src="./assets/brown-and-frien.png" alt="image" />
                   </li>
                 </ul>
@@ -792,14 +795,37 @@
       //#endregion
 
       //#region Handle Click chat item
-      const chatItems = document.querySelectorAll('#personalChat .list-group-item');
-      chatItems.forEach((item) => {
+      const startChat = document.getElementById('startChat');
+      const chatPersonalDetail = document.getElementById('chat__personal__detail');
+      const chatGroupDetail = document.getElementById('chat__group__detail');
+
+      const chatPersonItems = document.querySelectorAll('#personalChat .list-group-item');
+      chatPersonItems.forEach((item) => {
         item.addEventListener('click', function () {
           const chatItemActive = document.querySelector('.list-group-item--active');
           if (chatItemActive) {
             chatItemActive.classList.remove('list-group-item--active');
           }
           item.classList.add('list-group-item--active');
+          chatGroupDetail.classList.add('d-none');
+          chatPersonalDetail.classList.remove('d-none');
+          startChat.classList.add('d-none');
+          startChat.hidden = true;
+        });
+      });
+
+      const chatGroupItems = document.querySelectorAll('#groupChat .list-group-item');
+      chatGroupItems.forEach((item) => {
+        item.addEventListener('click', function () {
+          const chatItemActive = document.querySelector('.list-group-item--active');
+          if (chatItemActive) {
+            chatItemActive.classList.remove('list-group-item--active');
+          }
+          item.classList.add('list-group-item--active');
+          chatGroupDetail.classList.remove('d-none');
+          chatPersonalDetail.classList.add('d-none');
+          startChat.classList.add('d-none');
+          startChat.hidden = true;
         });
       });
     </script>
