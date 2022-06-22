@@ -15,7 +15,7 @@ body {
 }
 
 .chat-container {
-  width: 99%;
+  width: 98.9%;
 }
 
 .list-group-item {
@@ -28,7 +28,8 @@ body {
   background-size: cover;
   background-position: center;
 
-  height: 630px;
+  height: calc(100vh - 196px - 94px)!important;
+
   overflow-y: scroll;
 }
 
@@ -53,16 +54,8 @@ body {
   position: relative;
 }
 
-.chat__section--active::before {
-  position: absolute;
-  left: -28px;
-  top: -8px;
-
-  content: '';
-  width: 16px;
-  height: 100%;
-  display: inline-block;
-  background: #fcc423;
+.chat__section.chat__section--active{
+  border-left:3px solid #fcc423!important;
 }
 
 .chat-search-container {
@@ -168,7 +161,7 @@ body {
 }
 
 .chat__item__container {
-  height: 830px;
+  height: calc(100vh - 96px)!important;
   overflow-y: scroll;
 }
 
@@ -254,10 +247,6 @@ body {
 
   .chat-search-container {
     width: 80%;
-  }
-
-  .chat-search-plus {
-    transform: translateX(-100%);
   }
 
   .chat__item__user__count {
