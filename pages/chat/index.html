@@ -586,10 +586,10 @@
             <div class="chat__personal__detail__header p-3 w-100 d-flex justify-content-between align-items-center">
               <div class="chat__personal__detail__header__info">
                 <div class="position-relative chat__item__avatar--detail">
-                  <img src="./assets/avt-1.png" alt="Elizabeth" />
+                  <img src="./assets/avt-1.png" alt="Elizabeth" id="chat__personal__detail__avatar" />
                 </div>
                 <div class="ps-3 d-flex justify-content-center align-items-start flex-column">
-                  <span class="chat__item__user__name">Elizabeth 3E</span>
+                  <span class="chat__item__user__name" id="chat__personal__detail__username">Elizabeth 3E</span>
                   <span>Đang hoạt động</span>
                 </div>
               </div>
@@ -680,10 +680,10 @@
             <div class="chat__personal__detail__header p-3 w-100 d-flex justify-content-between align-items-center">
               <div class="chat__personal__detail__header__info">
                 <div class="position-relative chat__item__avatar--detail">
-                  <img src="./assets/gr-1.png" alt="Elizabeth" />
+                  <img src="./assets/gr-1.png" alt="Elizabeth" id="chat__group__detail__avatar" />
                 </div>
                 <div class="ps-3 d-flex justify-content-center align-items-start flex-column">
-                  <span class="chat__item__user__name">Beedu Group</span>
+                  <span class="chat__item__user__name" id="chat__group__detail__username">Beedu Group</span>
                   <span>Đang hoạt động</span>
                 </div>
               </div>
@@ -775,59 +775,7 @@
       $(function () {
         $('#header').load('./../../component/header/index.html');
       });
-      //#region Handle Switch Chat Section
-      const personalLink = document.getElementById('personalLink');
-      const personalChat = document.getElementById('personalChat');
-      const groupLink = document.getElementById('groupLink');
-      const groupChat = document.getElementById('groupChat');
-      personalLink.addEventListener('click', function () {
-        groupChat.classList.add('d-none');
-        personalChat.classList.remove('d-none');
-        document.querySelector('.chat__section--active').classList.remove('chat__section--active');
-        this.classList.add('chat__section--active');
-      });
-      groupLink.addEventListener('click', function () {
-        personalChat.classList.add('d-none');
-        groupChat.classList.remove('d-none');
-        document.querySelector('.chat__section--active').classList.remove('chat__section--active');
-        this.classList.add('chat__section--active');
-      });
-      //#endregion
-
-      //#region Handle Click chat item
-      const startChat = document.getElementById('startChat');
-      const chatPersonalDetail = document.getElementById('chat__personal__detail');
-      const chatGroupDetail = document.getElementById('chat__group__detail');
-
-      const chatPersonItems = document.querySelectorAll('#personalChat .list-group-item');
-      chatPersonItems.forEach((item) => {
-        item.addEventListener('click', function () {
-          const chatItemActive = document.querySelector('.list-group-item--active');
-          if (chatItemActive) {
-            chatItemActive.classList.remove('list-group-item--active');
-          }
-          item.classList.add('list-group-item--active');
-          chatGroupDetail.classList.add('d-none');
-          chatPersonalDetail.classList.remove('d-none');
-          startChat.classList.add('d-none');
-          startChat.hidden = true;
-        });
-      });
-
-      const chatGroupItems = document.querySelectorAll('#groupChat .list-group-item');
-      chatGroupItems.forEach((item) => {
-        item.addEventListener('click', function () {
-          const chatItemActive = document.querySelector('.list-group-item--active');
-          if (chatItemActive) {
-            chatItemActive.classList.remove('list-group-item--active');
-          }
-          item.classList.add('list-group-item--active');
-          chatGroupDetail.classList.remove('d-none');
-          chatPersonalDetail.classList.add('d-none');
-          startChat.classList.add('d-none');
-          startChat.hidden = true;
-        });
-      });
     </script>
+    <script src="./app.js"></script>
   </body>
 </html>
