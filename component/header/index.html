@@ -1,6 +1,6 @@
-<header class="d-flex justify-content-between align-items-center header shadow sticky-top bg-light">
+<header class="sticky-top d-flex justify-content-between align-items-center header shadow bg-light">
   <div class="header__logo">
-    <img src="./../../assets/images/beedu-logo.jpg" alt="Beedu logo" />
+    <img src="./../../assets/images/bee-logo-brand.png" alt="Beedu logo" />
   </div>
   <ul class="nav">
     <li class="nav-item active">
@@ -16,12 +16,17 @@
       <a href="#" class="nav-link nav-link--custom">Kiểm tra</a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link nav-link--custom">Trò chuyện</a>
+      <a href="../../pages/chat/index.html" class="nav-link nav-link--custom">Trò chuyện</a>
     </li>
     <li class="nav-item">
       <div class="dropdown">
-        <a class="nav-link nav-link--custom dropdown-toggle" type="button" id="dropdownMenuButton1"
-          data-bs-toggle="dropdown" aria-expanded="false">
+        <a
+          class="nav-link nav-link--custom dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
           Xem thêm
         </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -37,11 +42,11 @@
   <div class="actions"></div>
 </header>
 <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script defer >
+<script defer>
   const user = JSON.parse(localStorage.getItem('user'));
   const contentHTML = user
     ? // Have logined
-    `<span class="action__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+      `<span class="action__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
         <span class="action__icon"><i class="fa-solid fa-bell"></i></span>
         <div class="dropdown">
           <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,27 +63,27 @@
                 </div>
             </div>
             <li><hr class="dropdown-divider m-0"></li>
-            <li><a class="dropdown-item" href="#">Hồ sơ</a></li>
+            <li><a class="dropdown-item" href="./../post/index.html">Hồ sơ</a></li>
             <li><a class="dropdown-item" href="./../support/index.html">Trợ giúp</a></li>
-            <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+            <li><a class="dropdown-item" href="./../setting/index.html">Cài đặt</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" onclick="signOut()">Đăng xuất</a></li>
           </ul>
         </div>`
     : // Haven't login yet
-    `<a href="./../signIn/" class="btn btn-warning text-direction-none text-light">
+      `<a href="./../signIn/" class="btn btn-warning text-direction-none text-light">
           Đăng nhập/Đăng kí<span class="action__icon"><i class="fa-solid fa-circle-user"></i></span>
         </a>`;
   const actionDiv = document.getElementsByClassName('actions')[0];
   actionDiv.innerHTML = contentHTML;
   $(document).ready(function () {
     $.get('./../../component/head/index.html', function (data) {
-      $("head").append(data);
+      $('head').append(data);
     });
-  })
+  });
 
-  function signOut(){
-    localStorage.clear()
-    document.location.href = '/pages/home/index.html'
+  function signOut() {
+    localStorage.clear();
+    document.location.href = '/pages/home/index.html';
   }
 </script>
