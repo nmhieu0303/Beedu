@@ -15,10 +15,10 @@
       <div class="row">
         <div class="col-xs-12 col-md-1 p-0">
           <ul class="list-group pt-4 d-flex flex-column justify-content-center align-items-center">
-            <li class="list-group-item border-0 chat__section chat__section--active">
+            <li class="list-group-item border-0 chat__section chat__section--active" id="personalLink">
               <i class="fa-solid fa-comments"></i>
             </li>
-            <li class="list-group-item border-0 chat__section">
+            <li class="list-group-item border-0 chat__section" id="groupLink">
               <i class="fa-solid fa-people-roof"></i>
             </li>
           </ul>
@@ -36,7 +36,7 @@
                 <i class="fa-solid fa-circle-plus"></i>
               </span>
             </div>
-            <ul class="list-group pt-3 pe-2">
+            <ul class="list-group pt-3 pe-2" id="personalChat">
               <li class="list-group-item border-0 ps-2">
                 <div class="d-flex justify-content-start align-items-center w-100">
                   <div class="chat__item__avatar">
@@ -247,6 +247,329 @@
                 </div>
               </li>
             </ul>
+            <ul class="list-group pt-3 pe-2 d-none" id="groupChat">
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-1.png" alt="Group 1" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name chat__item__user__name--active">Beedu Group</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                      <span class="chat__item__user__count">5</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-2.png" alt="Group 2" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm học nhà Tèo 3A</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-3.png" alt="Avatar 3" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm Art Cô Minh Hằng</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-4.png" alt="Avatar 4" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm Tiếng Việt Cô Linh Đan</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-5.png" alt="Avatar 5" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm Tiếng Anh cô Hiền</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-6.png" alt="Avatar 6" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm nhảy Thầy Lâm</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-7.png" alt="Avatar 7" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm bóng đá</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-8.png" alt="Avatar 8" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm rapper</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-10.png" alt="Avatar 10" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm gia đình</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm vui chơi lành mạnh</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Trốn tìm cùng bố Thịnh</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Trốn tìm cùng bố Thịnh</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Trốn tìm cùng bố Thịnh</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-7.png" alt="Avatar 7" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm bóng đá</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-8.png" alt="Avatar 8" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm rapper</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-10.png" alt="Avatar 10" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm gia đình</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm vui chơi lành mạnh</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Trốn tìm cùng bố Thịnh</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Trốn tìm cùng bố Thịnh</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Trốn tìm cùng bố Thịnh</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lorem Ipsum is simply dummy text of the ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="col-xs-12 col-md-7 p-0">
@@ -260,6 +583,24 @@
     <script>
       $(function () {
         $('#header').load('./../../component/header/index.html');
+      });
+      const personalLink = document.getElementById('personalLink');
+      const personalChat = document.getElementById('personalChat');
+      const groupLink = document.getElementById('groupLink');
+      const groupChat = document.getElementById('groupChat');
+
+      personalLink.addEventListener('click', function () {
+        groupChat.classList.add('d-none');
+        personalChat.classList.remove('d-none');
+        document.querySelector('.chat__section--active').classList.remove('chat__section--active');
+        this.classList.add('chat__section--active');
+      });
+
+      groupLink.addEventListener('click', function () {
+        personalChat.classList.add('d-none');
+        groupChat.classList.remove('d-none');
+        document.querySelector('.chat__section--active').classList.remove('chat__section--active');
+        this.classList.add('chat__section--active');
       });
     </script>
   </body>
