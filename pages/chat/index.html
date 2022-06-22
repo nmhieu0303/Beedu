@@ -572,9 +572,197 @@
             </ul>
           </div>
         </div>
-        <div class="col-xs-12 col-md-7 p-0">
-          <div class="d-flex justify-content-center align-items-center flex-fill h-100 chat__item__detail">
+        <div class="col-xs-12 col-md-8 p-0 px-1">
+          <div class="d-flex justify-content-center align-items-center flex-fill h-100 chat__item__detail d-none">
             <img src="./assets/bee-chat.png" alt="Bee chat" />
+          </div>
+          <div
+            class="chat__personal__detail--personal border-start h-100 position-relative"
+            id="chat__personal__detail"
+          >
+            <div class="chat__personal__detail__header p-3 w-100 d-flex justify-content-between align-items-center">
+              <div class="chat__personal__detail__header__info">
+                <div class="position-relative chat__item__avatar--detail">
+                  <img src="./assets/avt-1.png" alt="Elizabeth" />
+                </div>
+                <div class="ps-3 d-flex justify-content-center align-items-start flex-column">
+                  <span class="chat__item__user__name">Elizabeth 3E</span>
+                  <span>Đang hoạt động</span>
+                </div>
+              </div>
+              <div class="chat__personal__detail__header__actions">
+                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-phone"></i></span>
+                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-video"></i></span>
+                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-ellipsis"></i></span>
+              </div>
+            </div>
+            <div class="chat__message__container px-1">
+              <div class="d-flex justify-content-start pt-2">
+                <ul class="list-group border-0">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem Ipsum is simply dummy text
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem Ipsum is simply dummy text of the world
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Lorem Ipsum</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end">
+                <ul class="list-group align-items-end">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">
+                    Lorem Ipsum is simply dummy text
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Lorem Ipsum</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Lorem Ipsum</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-start">
+                <ul class="list-group">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem Ipsum is simply dummy text of the world
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Lorem Ipsum</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">:))</li>
+                  <li class="chat__message__item shadown">
+                    <img src="./assets/brown-and-frien.png" alt="image" />
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end">
+                <ul class="list-group align-items-end">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">
+                    Lorem Ipsum is simply dummy text
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Lorem Ipsum</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Lorem Ipsum</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-start">
+                <ul class="list-group">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem Ipsum is simply dummy text of the world
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Lorem Ipsum</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">:))</li>
+                </ul>
+              </div>
+            </div>
+            <div class="position-absolute shadow-lg bottom-0 w-100 py-3" style="z-index: 999; margin-right: -7px">
+              <div class="px-3 d-flex justify-content-between align-items-center">
+                <span style="font-size: 40px">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </span>
+                <div class="px-3 w-100">
+                  <textarea class="form-control" placeholder="Nhập tin nhắn"></textarea>
+                </div>
+                <span style="font-size: 40px">
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="chat__personal__detail--personal border-start h-100 position-relative d-none"
+            id="chat__group__detail"
+          >
+            <div class="chat__personal__detail__header p-3 w-100 d-flex justify-content-between align-items-center">
+              <div class="chat__personal__detail__header__info">
+                <div class="position-relative chat__item__avatar--detail">
+                  <img src="./assets/avt-1.png" alt="Elizabeth" />
+                </div>
+                <div class="ps-3 d-flex justify-content-center align-items-start flex-column">
+                  <span class="chat__item__user__name">Elizabeth 3E</span>
+                  <span>Đang hoạt động</span>
+                </div>
+              </div>
+              <div class="chat__personal__detail__header__actions">
+                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-phone"></i></span>
+                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-video"></i></span>
+                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-ellipsis"></i></span>
+              </div>
+            </div>
+            <div class="chat__message__container px-1">
+              <div class="d-flex justify-content-start pt-2">
+                <ul class="list-group border-0">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem Ipsum is simply dummy text
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem Ipsum is simply dummy text of the world
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Lorem Ipsum</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end">
+                <ul class="list-group align-items-end">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">
+                    Lorem Ipsum is simply dummy text
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Lorem Ipsum</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Lorem Ipsum</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-start">
+                <ul class="list-group">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem Ipsum is simply dummy text of the world
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Lorem Ipsum</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">:))</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end">
+                <ul class="list-group align-items-end">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">
+                    Lorem Ipsum is simply dummy text
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Lorem Ipsum</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Lorem Ipsum</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-start">
+                <ul class="list-group">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem Ipsum is simply dummy text of the world
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Lorem Ipsum</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">:))</li>
+                  <li class="list-group-item chat__message__item shadown">
+                    <img src="./assets/brown-and-frien.png" alt="image" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="position-absolute shadow-lg bottom-0 w-100 py-3" style="z-index: 999; margin-right: -7px">
+              <div class="px-3 d-flex justify-content-between align-items-center">
+                <span style="font-size: 40px">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </span>
+                <div class="px-3 w-100">
+                  <textarea class="form-control" placeholder="Nhập tin nhắn"></textarea>
+                </div>
+                <span style="font-size: 40px">
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -584,23 +772,35 @@
       $(function () {
         $('#header').load('./../../component/header/index.html');
       });
+      //#region Handle Switch Chat Section
       const personalLink = document.getElementById('personalLink');
       const personalChat = document.getElementById('personalChat');
       const groupLink = document.getElementById('groupLink');
       const groupChat = document.getElementById('groupChat');
-
       personalLink.addEventListener('click', function () {
         groupChat.classList.add('d-none');
         personalChat.classList.remove('d-none');
         document.querySelector('.chat__section--active').classList.remove('chat__section--active');
         this.classList.add('chat__section--active');
       });
-
       groupLink.addEventListener('click', function () {
         personalChat.classList.add('d-none');
         groupChat.classList.remove('d-none');
         document.querySelector('.chat__section--active').classList.remove('chat__section--active');
         this.classList.add('chat__section--active');
+      });
+      //#endregion
+
+      //#region Handle Click chat item
+      const chatItems = document.querySelectorAll('#personalChat .list-group-item');
+      chatItems.forEach((item) => {
+        item.addEventListener('click', function () {
+          const chatItemActive = document.querySelector('.list-group-item--active');
+          if (chatItemActive) {
+            chatItemActive.classList.remove('list-group-item--active');
+          }
+          item.classList.add('list-group-item--active');
+        });
       });
     </script>
   </body>

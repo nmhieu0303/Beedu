@@ -23,8 +23,29 @@ body {
   border-radius: 4px;
 }
 
+.chat__message__container {
+  background-image: url(./assets/background-white-paint.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 630px;
+  overflow-y: scroll;
+}
+
+.chat__message__container .list-group-item:hover {
+  cursor: unset;
+}
+
 .list-group-item:hover {
   background-color: #e8f0fe;
+}
+
+.list-group-item--active {
+  background-color: #e8f0fe !important;
+}
+
+.list-group-item--active .chat__item__user__count {
+  display: none;
 }
 
 .chat__section {
@@ -81,6 +102,18 @@ body {
   right: 25%;
 }
 
+.chat__item__avatar--detail::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  background-color: #4bff00;
+  border-radius: 100%;
+  bottom: 0;
+  right: 5%;
+}
+
 .chat__item__user {
   width: 85%;
 }
@@ -119,23 +152,70 @@ body {
   width: 100%;
 }
 
+.chat__personal__detail--personal {
+  margin-right: -7px;
+}
+
+.chat__personal__detail__header {
+  background-color: #4584c5;
+  color: #fff;
+}
+
+.chat__personal__detail__header__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .chat__item__container {
-  height: 800px;
+  height: 830px;
   overflow-y: scroll;
 }
 
 .chat__item__container::-webkit-scrollbar {
-  width: 10px;
+  display: none;
 }
-.chat__item__container::-webkit-scrollbar-track {
+.chat__message__container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat__message__container::-webkit-scrollbar-track {
   border-radius: 5px;
 }
-.chat__item__container::-webkit-scrollbar-thumb {
+
+.chat__message__container::-webkit-scrollbar-thumb {
   background: #aaa;
   border-radius: 5px;
 }
-.chat__item__container::-webkit-scrollbar-thumb:hover {
+
+.chat__message__container::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, #00c6ff);
+}
+
+.chat__personal__detail__header__actions__item {
+  display: inline-block;
+  padding: 16px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chat__message__item {
+  padding: 0 !important;
+  margin: 4px 8px;
+  padding: 12px 12px 12px 16px !important;
+  border-radius: 100rem !important;
+  font-size: 18px;
+  width: fit-content;
+}
+
+.chat__message__item--left {
+  background-color: #f8f6f3 !important;
+}
+
+.chat__message__item--right {
+  background-image: linear-gradient(to bottom, #76b1de, #3463a1);
+  color: #fff !important;
 }
 
 @media only screen and (max-width: 1440px) {
