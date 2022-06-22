@@ -226,6 +226,22 @@ body {
   cursor: pointer;
 }
 
+.modal__actions {
+  padding-top: 140px;
+  padding-bottom: 40px;
+}
+
+.modal__actions__item {
+  cursor: pointer;
+}
+
+.bee-phone {
+  position: absolute;
+  left: 50%;
+  top: -150%;
+  transform: translateX(-50%);
+}
+
 @media only screen and (max-width: 1440px) {
   .chat__item__avatar::after {
     right: 3%;

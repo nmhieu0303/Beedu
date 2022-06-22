@@ -610,8 +610,18 @@
                 </div>
               </div>
               <div class="chat__personal__detail__header__actions">
-                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-phone"></i></span>
-                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-video"></i></span>
+                <span
+                  class="chat__personal__detail__header__actions__item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  ><i class="fa-solid fa-phone"></i
+                ></span>
+                <span
+                  class="chat__personal__detail__header__actions__item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  ><i class="fa-solid fa-video"></i
+                ></span>
                 <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-ellipsis"></i></span>
               </div>
             </div>
@@ -786,6 +796,33 @@
         </div>
       </div>
     </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-5 d-flex align-items-center justify-content-center flex-column">
+            <img src="./assets/elizabeth.png" alt="Elizabeth" />
+            <h3 class="pt-4 fw-bold">Elizabeth 3E</h3>
+            <p>Đang liên hệ...</p>
+            <div class="modal__actions">
+              <div class="position-relative">
+                <div class="bee-phone">
+                  <img src="./assets/bee-phone.png" alt="bee phone" />
+                </div>
+                <span class="modal__actions__item">
+                  <img src="./assets/modal-action-1.png" alt="Action 1" />
+                </span>
+                <span class="modal__actions__item">
+                  <img src="./assets/modal-action-2.png" alt="Action 2" />
+                </span>
+                <span class="modal__actions__item" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="./assets/modal-action-3.png" alt="Action 3" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
       $(function () {
