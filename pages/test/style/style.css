@@ -8,7 +8,8 @@
 @import 'pages/beequiz.css';
 
 .form-select{
-    width: 150px !important;;
+    width: 150px !important;
+    background-color: #ffc107!important;
 }
 .score--img{
     width: 100%;
